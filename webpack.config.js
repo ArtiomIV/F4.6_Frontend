@@ -6,7 +6,8 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.join(__dirname, "/dist"),
-        filename: 'main.js'
+        filename: 'main.js',
+        publicPath: '/'
     },
 
     module: {
@@ -23,6 +24,10 @@ module.exports = {
                 use: ["style-loader", "css-loader"]
             }
         ]
+    },
+
+    devServer: {
+    historyApiFallback: true,
     },
 
     plugins: [

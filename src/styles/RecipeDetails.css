@@ -1,0 +1,22 @@
+.recipedetail__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 5vw 20vw 0vw 20vw
+}
+
+.recipedetail__wrapper__item4__nutritonfacts {
+    display: flex;
+}
+
+.recipedetail__wrapper__item4 h2 {
+    margin-bottom: 2vw;
+}
+
+.fact {
+    min-width: 20%;
+}
+
+.fact p:nth-child(1) {
+    font-weight: bold;
+}
