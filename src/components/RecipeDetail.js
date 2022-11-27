@@ -1,7 +1,7 @@
 import React from "react"
-import { useParams } from "react-router"
 import { useLocation } from 'react-router-dom'
 import "../styles/RecipeDetails.css"
+import logo from '../img/palceholder.jpg'
 
 
 function RecipeDetails(props) {
@@ -12,7 +12,7 @@ function RecipeDetails(props) {
         <div className="recipedetail__wrapper">
             <div className="recipedetail__wrapper__item1">
                 <h1 className="recipedetail__wrapper__wrapper2__title">{location.state.name}</h1>
-                <img src="./img/cake.jpg" />
+                <img height="300px" width="500px" src={logo} />
             </div>
             <div className="recipedetail__wrapper__item2">
                 <p className="recipedetail__wrapper__desc" >{location.state.desc}</p>

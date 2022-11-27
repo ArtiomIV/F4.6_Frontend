@@ -28,15 +28,15 @@ function HomeByCategory(props) {
 
     return (
 
-        <Table className="home__recipestable">
-            <thead className="home__recipestable__thead"><tr><th>Name</th><th>Category</th></tr></thead>
-            <tbody className="home__recipestable__tbody">
+        <Table className="homebycategory__recipestable">
+            <thead className="homebycategory__recipestable__thead"><tr><th>Name</th><th>Category</th></tr></thead>
+            <tbody className="homebycategory__recipestable__tbody">
 
                 {recipes.map(item =>
 
-                    <tr key={item.id} className="home__recipestable__tbody__trow">
-                        <td className="home__recipestable__tbody__trow__name tcolumn"><Link to={`/RecipeDetails/${item.id}`} state={item}>{item.name}</Link></td>
-                        <td className="home__recipestable__tbody__trow__category tcolumn">{item.category}</td>
+                    <tr key={item.id} className="homebycategory__recipestable__tbody__trow">
+                        <td className="homebycategory__recipestable__tbody__trow__name tcolumn"><Link to={`/RecipeDetails/${item.id}`} state={item}>{item.name}</Link></td>
+                        <td className="homebycategory__recipestable__tbody__trow__category tcolumn">{item.category}</td>
                     </tr>
                             
                 )}
