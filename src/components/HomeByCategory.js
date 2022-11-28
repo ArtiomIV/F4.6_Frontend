@@ -3,6 +3,7 @@ import axios from "axios";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import Table from "react-bootstrap/Table";
+import "../styles/HomeByCategory.css"
 
 function HomeByCategory(props) {
 
